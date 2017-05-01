@@ -16,7 +16,7 @@ class Assignment1:
     def __init__(self):
         self.target = "HMBS"
         self.gene = self.fetch_gene_coordinates(self,"hg19",)
-        self.geneinfo = ['BDNF', 'NM_001258209', '11', 118955586, 118964259, '+', 13,
+        self.geneinfo = ['HMBS', 'NM_001258209', '11', 118955586, 118964259, '+', 13,
                          "b'118955586,118958964,118959344,118959791,118959926,118960392,118960699,118960899,118962122,118962834,118963467,118963644,118963819"]
         self.bamfile = os.path.join(os.getcwd(), "HG00096.chrom11.ILLUMINA.bwa.GBR.low_coverage.20120522.bam")
         self.bedtoolsfile = pybedtools.BedTool('HG00096.chrom11.ILLUMINA.bwa.GBR.low_coverage.20120522.bam')
